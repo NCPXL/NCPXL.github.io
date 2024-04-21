@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Persoonlijke ontwikkeling</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            background-image: url(images/PXLLogo.jpg);
+            background-repeat:  repeat;
+            padding: 15px;
+        }
+
+        div.polaroid {
+            width: 500px;
+            background-color: white;
+            margin-top: 10px;
+        }
+
+        div.container {
+            text-align: center;
+            padding: 1px;
+            color: black;
+            font-size: x-large;
+        }
+
+        .text-center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+    <script>
+        $.get("navbar.html", function(data)
+        {
+            $("#navbar").replaceWith(data);
+        });
+    </script>
+
+    <h1 class="center">Verplichte activiteiten, per domein</h1>
+    <div class="text-center">
+        <div id="pagination"></div>
+        <script>
+            $.get("pagination.html", function(data)
+            {
+                $("#pagination").replaceWith(data);
+            });
+        </script>
+
+        <h2>4. Persoonlijke ontwikkeling</h2>
+        <div>Locatie: Hogeschool PXL</div>
+        <div>Datum Projectweek: 14-18/02/22</div>
+        <ul>
+            <li>3 POP-sessies
+                <ul>
+                    <li>
+                        <div>POPping</div>
+                        <div>Datum: 08/03/22</div>
+                        <div>Tijdens deze POP-sessie werkten we samen
+                            in groepen om meer inzicht te krijgen in
+                            onze eigen vaardigheden en die van je
+                            groepsgenoten. Verder oefenden we ook met
+                            het geven en ontvangen van feedback en
+                            werken aan een persoonlijk ontwikkelingsplan.
+                        </div><br>
+                    </li>
+                    <li>
+                        <div>Brein aan het werk</div>
+                        <div>Datum: 08/03/22</div>
+                        <div>Tijdens deze POP-sessie onderzochten we de
+                            impact op onze hersenen. En zoeken we naar
+                            tools om ons werk op de meest efficiënte
+                            manier aan te pakken.
+                        </div><br>
+                    </li>
+                    <li>
+                        <div>My Team and I</div>
+                        <div>Datum: 11/10/23</div>
+                        <div>Op de Corda Campus kregen we tijdens ons
+                            IT-project opdrachten om samen op te lossen.
+                            Verder dienden we ook een paar documenten in
+                            te vullen over het team.
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="polaroid">
+            <img src="images/4_Pop-sessies.jpg" alt="POP-sessies" style="width:100%">
+            <div class="container">
+                <p>POP-sessies</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

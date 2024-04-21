@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Verplichte activiteiten</title>
+    <title>Seminaries</title>
     <link rel="stylesheet" href="style.css">
     <script src="js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,13 +14,9 @@
             background-repeat:  repeat;
             padding: 15px;
         }
-        img{
-            width: 50%;
-            height: 50%;
-        }
 
         div.polaroid {
-            width: 80%;
+            width: 500px;
             background-color: white;
             margin-top: 10px;
         }
@@ -31,129 +27,139 @@
             color: black;
             font-size: x-large;
         }
+
+        .text-center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
     </style>
 
 </head>
 
 <body>
 <nav id="navbar"></nav>
-    <script>
-        $.get("navbar.html", function(data)
-        {
-            $("#navbar").replaceWith(data);
-        });
-    </script>
+<script>
+    $.get("navbar.html", function(data)
+    {
+        $("#navbar").replaceWith(data);
+    });
+</script>
 
-    <h1>Verplichte activiteiten, per domein</h1>
-    <div id="pagination"></div>
-    <script>
-        $.get("pagination.html", function(data)
-        {
-            $("#pagination").replaceWith(data);
-        });
-    </script>
+    <h1 class="center">Verplichte activiteiten, per domein</h1>
+    <div class="text-center">
+        <div id="pagination"></div>
+        <script>
+            $.get("pagination.html", function(data)
+            {
+                $("#pagination").replaceWith(data);
+            });
+        </script>
 
-    <h2>2. Seminaries </h2>
-    <p>Locatie: Hogeschool PXL </p>
-    <ul>
-        <li>2TIN
-            <ul>
-                <li>
-                    <div>Interacto: Clean Coding</div>
-                    <div>Datum: 01/03/22</div>
-                    <div>Hier bestudeerden wij de 6 stappen tot
-                        clean code/ goed en leesbare code:
-                        begrijpen, code schrijven, concepten,
-                        tools, experimenteren en beoefenen.
-                    </div><br>
-                </li>
-                <li>
-                    <div>Cegeka: The Challenge of Open Source</div>
-                    <div>Datum: 15/03/22</div>
-                    <div>Men vertelde over het belang van Open
-                        source en het gebruiken van de tool OWASP
-                        om zo kwetsbaarheden te vermijden.
-                    </div><br>
-                </li>
-                <li>
-                    <div>Ericsson: Introduction to 5G</div>
-                    <div>Datum: 29/03/22</div>
-                    <div>Dit seminarie ging over de geschiedenis van
-                        het telefonisch netwerk, specifiek de
-                        evolutie van 1G naar 4G. En wat de toekomst
-                        brengt met de implementatie van 5G.
-                    </div><br>
-                </li>
-                <li>
-                    <div>Easi:API-first web development using Laravel and Vue.JS</div>
-                    <div>Datum: 19/04/22</div>
-                    <div>Hier leerden ze ons hoe API kan helpen
-                        in web development.
-                    </div>
-                </li>
-            </ul>
-        </li>
-    </ul>
+        <h2>2. Seminaries</h2>
+        <p>Locatie: Hogeschool PXL </p>
+        <ul>
+            <li>2TIN
+                <ul>
+                    <li>
+                        <div>Interacto: Clean Coding</div>
+                        <div>Datum: 01/03/22</div>
+                        <div>Hier bestudeerden wij de 6 stappen tot
+                            clean code/ goed en leesbare code:
+                            begrijpen, code schrijven, concepten,
+                            tools, experimenteren en beoefenen.
+                        </div><br>
+                    </li>
+                    <li>
+                        <div>Cegeka: The Challenge of Open Source</div>
+                        <div>Datum: 15/03/22</div>
+                        <div>Men vertelde over het belang van Open
+                            source en het gebruiken van de tool OWASP
+                            om zo kwetsbaarheden te vermijden.
+                        </div><br>
+                    </li>
+                    <li>
+                        <div>Ericsson: Introduction to 5G</div>
+                        <div>Datum: 29/03/22</div>
+                        <div>Dit seminarie ging over de geschiedenis van
+                            het telefonisch netwerk, specifiek de
+                            evolutie van 1G naar 4G. En wat de toekomst
+                            brengt met de implementatie van 5G.
+                        </div><br>
+                    </li>
+                    <li>
+                        <div>Easi:API-first web development using Laravel and Vue.JS</div>
+                        <div>Datum: 19/04/22</div>
+                        <div>Hier leerden ze ons hoe API kan helpen
+                            in web development.
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
 
-    <div class="polaroid">
-        <img src="images/2.1_Seminaries.jpg" alt="5 Terre" style="width:100%">
-        <div class="container">
-            <p>Seminaries PXL-Digital</p>
+        <div class="polaroid">
+            <img src="images/2.1_Seminaries.jpg" alt="SeminariesPXL-Digital1" style="width:100%">
+            <div class="container">
+                <p>Seminaries PXL-Digital</p>
+            </div>
+        </div>
+
+        <ul>
+            <li>3TIN
+                <ul>
+                    <li>
+                        <div>Dataroots: Data/AI strategy</div>
+                        <div>Datum: 26/10/22</div>
+                        <div>We leerden hier hoe je zakelijke waarde kunt
+                            achterhalen door transformerende data- en
+                            analytische use cases te identificeren.
+                        </div><br>
+                    </li>
+                    <li>
+                        <div>iO Belgium: Automated Testing and Quality Assurance</div>
+                        <div>Datum: 09/11/22</div>
+                        <div>In dit practicum leerden we meer over
+                            testen schrijven in PHP.
+                        </div><br>
+                    </li>
+                    <li>
+                        <div>ACA Group: Accessibility & UX: Building Mobile Apps for All</div>
+                        <div>Datum: 16/11/22</div>
+                        <div>Hier namen we ontwikkeling van apps voor
+                            mensen met beperkingen onder de loep.
+                        </div><br>
+                    </li>
+                    <li>
+                        <div>AE: Exploratory API Testing Workshop:
+                            Unleashing the Power of Manual Testing</div>
+                        <div>Datum: 08/11/23</div>
+                        <div>Een practicum over hoe we postman kunnen
+                            gebruiken om te hacken en waarvoor we moeten
+                            uitkijken.
+                        </div><br>
+                    </li>
+                    <li>
+                        <div>Cegeka: Dark launches and gradual release</div>
+                        <div>Datum: 15/11/23</div>
+                        <div>Dit seminarie ging over van gebruik van
+                            dark launches en feature flags voor
+                            gecontroleerde releases.
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="polaroid">
+            <img src="images/2.2_Seminaries.jpg" alt="SeminariesPXL-Digital2" style="width:100%">
+            <div class="container">
+                <p>Seminaries PXL-Digital</p>
+            </div>
         </div>
     </div>
 
-    <ul>
-        <li>3TIN
-            <ul>
-                <li>
-                    <div>Dataroots: Data/AI strategy</div>
-                    <div>Datum: 26/10/22</div>
-                    <div>We leerden hier hoe je zakelijke waarde kunt
-                        achterhalen door transformerende data- en
-                        analytische use cases te identificeren.
-                    </div><br>
-                </li>
-                <li>
-                    <div>iO Belgium: Automated Testing and Quality Assurance</div>
-                    <div>Datum: 09/11/22</div>
-                    <div>In dit practicum leerden we meer over
-                        testen schrijven in PHP.
-                    </div><br>
-                </li>
-                <li>
-                    <div>ACA Group: Accessibility & UX: Building Mobile Apps for All</div>
-                    <div>Datum: 16/11/22</div>
-                    <div>Hier namen we ontwikkeling van apps voor
-                        mensen met beperkingen onder de loep.
-                    </div><br>
-                </li>
-                <li>
-                    <div>AE: Exploratory API Testing Workshop:
-                        Unleashing the Power of Manual Testing</div>
-                    <div>Datum: 08/11/23</div>
-                    <div>Een practicum over hoe we postman kunnen
-                        gebruiken om te hacken en waarvoor we moeten
-                        uitkijken.
-                    </div><br>
-                </li>
-                <li>
-                    <div>Cegeka: Dark launches and gradual release</div>
-                    <div>Datum: 15/11/23</div>
-                    <div>Dit seminarie ging over van gebruik van
-                        dark launches en feature flags voor
-                        gecontroleerde releases.
-                    </div>
-                </li>
-            </ul>
-        </li>
-    </ul>
-
-    <div class="polaroid">
-        <img src="images/2.2_Seminaries.jpg" alt="5 Terre" style="width:100%">
-        <div class="container">
-            <p>Seminaries PXL-Digital</p>
-        </div>
-    </div>
 
 </body>
 

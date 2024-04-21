@@ -1,0 +1,116 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Extra activiteiten</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            background-image: url(images/PXLLogo.jpg);
+            background-repeat:  repeat;
+            padding: 15px;
+        }
+
+        div.polaroid {
+            width: 500px;
+            background-color: white;
+            margin-top: 10px;
+        }
+
+        div.container {
+            text-align: center;
+            padding: 1px;
+            color: black;
+            font-size: x-large;
+        }
+
+        .text-center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+
+        @media only screen and (min-width: 1000px) {
+            .text-center{
+                width: 40%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+    <script>
+        $.get("navbar.html", function(data)
+        {
+            $("#navbar").replaceWith(data);
+        });
+    </script>
+
+    <h1 class="center">Extra activiteiten, per domein</h1>
+    <div class="text-center">
+        <div id="pagination"></div>
+        <script>
+            $.get("pagination.html", function(data)
+            {
+                $("#pagination").replaceWith(data);
+            });
+        </script>
+
+        <h2>5.1. Japanse taalcursus</h2>
+        <div>Locatie: PCVO Hasselt</div>
+        <div>Datum/ duur 1ste jaar: 06/09/21-13/06/22</div>
+        <div>Datum/ duur 2de jaar: 12/09/22-05/06/23</div>
+        <div>Elke maandag van 18u15 tot 21u30.</div>
+        <div>Door de lessen ontdekte en leerde ik meer over de Japanse
+            gebruiken en taal.
+        </div>
+
+        <div class="polaroid">
+            <img src="images/5.1_extras.jpg" alt="JapanseTuinHasselt" style="width:100%">
+            <div class="container">
+                <p>Japanse tuin Hasselt</p>
+            </div>
+        </div>
+
+        <h2>5.2. Monitor schaatskamp</h2>
+        <div>Locatie: Sportcentrum Genk – Schaverdijn Hasselt</div>
+        <div>Datum herfstvakantie: 03/11/21-05/11/21</div>
+        <div>Datum paasvakantie: 04/04/22-08/04/22</div>
+        <div>Elke dag van 9 uur tot 12 uur.</div>
+        <div>Hier was ik monitor in een schaatskamp
+            en gaf ik schaats les aan jonge kinderen
+            van 8 tot 12 jaar.
+        </div>
+
+        <div class="polaroid">
+            <img src="images/5.2_extras.jpg" alt="SchaverdijnHasselt" style="width:100%">
+            <div class="container">
+                <p>Schaverdijn Hasselt</p>
+            </div>
+        </div>
+
+        <h2>5.3. Stage Brainlane</h2>
+        <div>Locatie: Genkersteenweg 204, 3500 Hasselt</div>
+        <div>Datum: 20/02/23-27/03/23, elke maandag van 9 uur tot 16 uur.</div>
+        <div>Tijdens de stage heb ik veel bijgeleerd
+            over het bedrijfsleven en MODX.
+        </div>
+
+        <div class="polaroid">
+            <img src="images/5.3_extras.jpg" alt="Brainlane" style="width:100%">
+            <div class="container">
+                <p>Brainlane</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
