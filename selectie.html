@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Selectie van activiteiten</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .selectie {
+            border: 5px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+            float: left;
+        }
+        h1{
+            text-align: center;
+            background: #3e3f9d;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <script>
+        $.get("navbar.html", function(data)
+        {
+            $("#navbar").replaceWith(data);
+        });
+    </script>
+
+    <h1>Selectie van activiteiten</h1>
+    <a target="_blank" href="selectie_1_internationale_stage.html">
+        <img class="selectie" src="images/Logo_1_Frostbit.jpg" alt="FrostbitLogo">
+    </a>
+
+    <a target="_blank" href="selectie_2_japanse_taalcursus.html">
+        <img class="selectie" src="images/Logo_2_PCVO.jpg" alt="Paris">
+    </a>
+
+    <a target="_blank" href="selectie_3_monitor_schaatskamp.html">
+        <img class="selectie" src="images/Logo_3_Sportingenk.jpg" alt="Paris">
+    </a>
+</body>
+
+</html>

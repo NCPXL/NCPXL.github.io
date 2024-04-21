@@ -4,17 +4,63 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Index</title>
+    <title>Voorstelling</title>
     <link rel="stylesheet" href="style.css">
-    <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="about.html">About</a></li>
-    </ul>
+    <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .center{
+            text-align: center;
+        }
+    </style>
+
 </head>
 
 <body>
-<p>Hello world!!!!</p>
-<script src="js/app.js"></script>
+    <div id="navbar"></div>
+    <script>
+        $.get("navbar.html", function(data)
+            {
+                $("#navbar").replaceWith(data);
+            });
+    </script>
+
+    <div class="center">
+        <h1>Voorstelling</h1>
+        <p>Hover over de afbeelding voor uitleg</p>
+    </div>
+
+    <div class="imagecontainer">
+        <img src="images/Profiel.png" alt="Avatar" class="image">
+        <div class="middle">
+            <div class="imagetext">
+                <p> Ik ben een student in de toegepaste informatica. Mijn
+                    passie ligt voornamelijk bij programmeren, vooral met Java
+                    en in frontend development. Ik ben geïnteresseerd in
+                    verschillende programmeer- en ontwikkelingsgebieden en vind
+                    het leuk om nieuwe technologieën te ontdekken en te leren.
+                </p>
+                <p>Mijn ambitie is om in de toekomst te werken bij een bedrijf
+                    met diverse afdelingen, omdat ik constant wil blijven groeien
+                    en leren op verschillende vlakken. Ik ben van plan om te
+                    zoeken naar een bedrijf met internationale vertakkingen,
+                    zodat ik tijdens korte periodes in het buitenland ervaring
+                    kan opdoen.
+                </p>
+                <p>Over 3 tot 5 jaar hoop ik mijn kennis verder te hebben
+                    verdiept in Unreal Engine, Java, en web development. Mijn
+                    doel is om zeer bedreven te worden in deze technologieën en
+                    mijn vaardigheden te gebruiken in complexe projecten.
+                    Daarnaast zou ik mijn projectmanagementvaardigheden verder
+                    willen ontwikkelen, om effectief te kunnen werken in teams
+                    en zelf projecten te leiden. Ook wil ik mijn communicatieve
+                    vaardigheden versterken, zowel in het Nederlands als in het
+                    Engels, om goed te kunnen samenwerken in een internationale
+                    omgeving.
+                </p>
+            </div>
+        </div>
+    </div>
 
 </body>
 
